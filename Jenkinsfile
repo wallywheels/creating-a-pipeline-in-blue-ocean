@@ -8,6 +8,11 @@ pipeline {
 
   }
   stages {
+    stage('Boss') {
+    echo 'Check out this Boss'
+    LikeAboss
+      }
+    }
     stage('Build') {
       steps {
         sh 'npm install'
