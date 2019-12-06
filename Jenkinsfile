@@ -1,4 +1,3 @@
-@Library('2013Boss')_
 pipeline {
   agent {
     docker {
@@ -8,11 +7,6 @@ pipeline {
 
   }
   stages {
-    stage('Boss') {
-      steps {
-        image 'LikeAboss'
-      }
-    }
     stage('Build') {
       steps {
         sh 'npm install'
