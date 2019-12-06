@@ -9,7 +9,8 @@ pipeline {
   }
   stages {
     stage('Boss') {
-    LikeAboss
+      steps {
+        LikeAboss
       }
     }
     stage('Build') {
