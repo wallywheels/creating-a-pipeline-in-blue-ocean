@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Boss') {
       steps {
-        LikeAboss
+        image 'LikeAboss'
       }
     }
     stage('Build') {
